@@ -22,7 +22,7 @@ Here's a general outline of the code structure:
 
 ### Backend Setup:
 
-Set up the Node.js backend with MongoDB and Mongoose. Define a Post schema with a createdAt and updatedAt field for timestamps.
+###### Set up the Node.js backend with MongoDB and Mongoose. Define a Post schema with a createdAt and updatedAt field for timestamps.
 
 ```js
 // Example Post Schema using Mongoose
@@ -39,7 +39,7 @@ const Post = mongoose.model('Post', postSchema);
 
 module.exports = Post;
 ```
-
+### Front-end Setup:
 ###### Redux Actions and Thunk: In your Redux code, create actions and a thunk to fetch the posts from the backend.
 
 ```js
