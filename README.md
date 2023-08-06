@@ -2,25 +2,25 @@
 
 ##### To fetch posts from a Node.js backend that have been created or updated within the last 7 days using Redux or Redux Toolkit, we need to follow these steps:
 
-#### Set up the Backend:
+### Set up the Backend:
 
 First, ensure that you have a Node.js backend with MongoDB and Mongoose set up. Define a schema and model for the posts in Mongoose, which should include a field to store the post's creation and last update timestamps.
 
-#### Create Redux Actions:
+### Create Redux Actions:
 
 In the frontend application, create Redux actions to handle fetching the posts. We'll need at least three actions: one to initiate the request, one to handle successful response, and another to handle any errors.
 
-#### Create a Redux Thunk:
+### Create a Redux Thunk:
 
 Use Redux Thunk middleware to create an asynchronous action to fetch the posts. The asynchronous action will call the backend API to retrieve the posts that meet the criteria of being created or updated within the last 7 days.
 
-#### Connect Redux to React Component:
+### Connect Redux to React Component:
 
 Connect the Redux store to your React component to access the fetched posts.
 
 Here's a general outline of the code structure:
 
-#### Backend Setup:
+### Backend Setup:
 
 Set up the Node.js backend with MongoDB and Mongoose. Define a Post schema with a createdAt and updatedAt field for timestamps.
 
